@@ -1,0 +1,2 @@
+C:\oop-projects\simple-database\InvManager\bin\Release\net8.0-windows\win-x86\publish\InvManager.pdb
+C:\oop-projects\simple-database\InvManager\bin\Release\net8.0-windows\win-x86\publish\InvManager.exe

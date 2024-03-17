@@ -1,0 +1,2 @@
+C:\oop-projects\simple-database\InvManager\bin\Release\Deploy\InvManager.pdb
+C:\oop-projects\simple-database\InvManager\bin\Release\Deploy\InvManager.exe

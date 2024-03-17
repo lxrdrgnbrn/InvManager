@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <RootNamespace>simple_database</RootNamespace>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+      <ApplicationIcon>Images\InvManager.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Fonts\Montserrat-VariableFont_wght.ttf" />
+      <Resource Include="Fonts\Montserrat-VariableFont_wght.ttf" />
+      <None Remove="Images\dataverse.svg" />
+      <None Remove="Images\dataverse.png" />
+      <None Remove="Images\data-class.png" />
+      <None Remove="Images\Logo.png" />
+      <Resource Include="Images\Logo.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\maximize.png" />
+      <Resource Include="Images\maximize.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\minimize.png" />
+      <Resource Include="Images\minimize.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\database-x.png" />
+      <Resource Include="Images\database-x.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\database-add.png" />
+      <Resource Include="Images\database-add.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\database-gear.png" />
+      <Resource Include="Images\database-gear.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\database-down.png" />
+      <Resource Include="Images\database-down.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\database-check.png" />
+      <Resource Include="Images\database-check.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\database-up.png" />
+      <Resource Include="Images\database-up.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\dataverse-square.png" />
+      <Resource Include="Images\dataverse-square.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\InvManager.ico" />
+      <Resource Include="Images\InvManager.ico">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MaterialDesignColors" Version="3.1.0-ci571" />
+      <PackageReference Include="MaterialDesignThemes" Version="5.0.1-ci571" />
+      <PackageReference Include="MaterialDesignThemes.MahApps" Version="3.1.0-ci571" />
+      <PackageReference Include="MaterialDesignThemes.MahApps.163" Version="0.0.111" />
+      <PackageReference Include="MaterialDesignXaml.DialogsHelper" Version="1.0.4" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
