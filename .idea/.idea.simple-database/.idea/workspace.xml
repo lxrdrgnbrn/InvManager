@@ -7,11 +7,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a16a068b-c347-4e4d-bb38-b42ee2b6f01c" name="Changes" comment="" />
+    <list default="true" id="a16a068b-c347-4e4d-bb38-b42ee2b6f01c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/InvManager/Model/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InvManager/Model/DataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InvManager/Model/DataModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InvManager/Model/DataModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InvManager/ModelView/AddModelView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InvManager/ModelView/AddModelView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InvManager/ModelView/LoginModelView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InvManager/ModelView/LoginModelView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InvManager/ModelView/MainModelView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InvManager/ModelView/MainModelView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InvManager/ModelView/UpdateModelView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InvManager/ModelView/UpdateModelView.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/InvManager/App.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +50,7 @@
     "Publish to folder.Deploy.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,7 +107,7 @@
       <workItem from="1710606280343" duration="22830000" />
       <workItem from="1710677329452" duration="1307000" />
       <workItem from="1710684657552" duration="23787000" />
-      <workItem from="1710712801600" duration="1879000" />
+      <workItem from="1710712801600" duration="4578000" />
     </task>
     <servers />
   </component>

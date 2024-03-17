@@ -1,5 +1,9 @@
 namespace simple_database.Model;
 
+
+/// <summary>
+///  Перечисление для свойства Condition(Состояние)
+/// </summary>
 public enum EquipmentCondition
 {
     NoRepairNeeded,
@@ -36,7 +40,7 @@ public class DataModel
     }
 
     /// <summary>
-    /// Название оборудования.
+    /// Название оборудования
     /// </summary>
     public string Name 
     { 
@@ -50,7 +54,7 @@ public class DataModel
     }
 
     /// <summary>
-    /// Описание оборудования.
+    /// Описание оборудования
     /// </summary>
     public string Description 
     { 
@@ -64,7 +68,7 @@ public class DataModel
     }
 
     /// <summary>
-    /// Категория оборудования.
+    /// Категория оборудования
     /// </summary>
     public string Category 
     { 
@@ -78,7 +82,7 @@ public class DataModel
     }
 
     /// <summary>
-    /// Дата покупки оборудования.
+    /// Дата покупки оборудования
     /// </summary>
     public DateTime PurchaseDate 
     { 
@@ -90,7 +94,7 @@ public class DataModel
     }
 
     /// <summary>
-    /// Состояние оборудования.
+    /// Состояние оборудования
     /// </summary>
     public EquipmentCondition Condition 
     { 
@@ -102,7 +106,7 @@ public class DataModel
     }
 
     /// <summary>
-    /// Инвентарный номер оборудования.
+    /// Инвентарный номер оборудования
     /// </summary>
     public string InventoryNumber 
     { 

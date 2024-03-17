@@ -13,6 +13,11 @@ public partial class MainModelView : Window
     private string _fileName;
     private DataManager _dataManager;
 
+    /// <summary>
+    ///  Инициализация основного окна
+    /// </summary>
+    /// <param name="FileName">Имя таблицы</param>
+    /// <param name="DataManager">Дата Менеджер</param>
     public MainModelView(string FileName, DataManager DataManager)
     {
         InitializeComponent();
@@ -24,6 +29,9 @@ public partial class MainModelView : Window
         NameBlock.Text = _fileName;
     }
 
+    /// <summary>
+    /// Метод для изменения значка кнопки по изменению размера окна
+    /// </summary>
     private void MainWindow_SizeChanged(object sender, SizeChangedEventArgs e)
     {
         if (this.WindowState == WindowState.Maximized)
@@ -38,23 +46,36 @@ public partial class MainModelView : Window
         }
     }
 
+    /// <summary>
+    /// Обработчик кнопки сворачивания окна
+    /// </summary>
     private void MinimizeBtn_OnClick(object sender, RoutedEventArgs e)
     {
         WindowState = WindowState.Minimized;
     }
-
+    
+    
+    /// <summary>
+    /// Обработчик кнопки закрытия окна
+    /// </summary>
     private void CloseBtn_OnClick(object sender, RoutedEventArgs e)
     {
         Application.Current.Shutdown();
     }
 
 
+    /// <summary>
+    /// Метод для реализации перетаскивания окна
+    /// </summary>
     private void TopGrid_OnMouseDown(object sender, MouseButtonEventArgs e)
     {
         if (e.LeftButton == MouseButtonState.Pressed)
             DragMove();
     }
 
+    /// <summary>
+    /// Обработчик кнопки расширения окна
+    /// </summary>
     private void MaximizeBtn_OnClick(object sender, RoutedEventArgs e)
     {
         if (this.WindowState == WindowState.Maximized)
@@ -67,16 +88,21 @@ public partial class MainModelView : Window
         }
     }
 
+    /// <summary>
+    /// Обработчик кнопки сохранения
+    /// </summary>
     private void SaveBtn_OnClick(object sender, RoutedEventArgs e)
     {
         if (_dataManager.Data.Count != 0)
         {
+            // Если файл существует то записываем в него
             if (File.Exists(_fileName))
             {
                 _dataManager.SaveData(_fileName);
             }
             else
             {
+                // Если файла не существует открывается диалогове окно для сохранения
                 Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
                 dialog.FileName = _fileName;
                 dialog.Filter = "InvManager file (*.json)|*.json";
@@ -96,7 +122,10 @@ public partial class MainModelView : Window
             MessageBox.Show("Таблица не может быть пустой", "Ошибка");
         }
     }
-
+    
+    /// <summary>
+    /// Обработчик кнопки загрузки таблицы
+    /// </summary>
     private void LoadBtn_OnClick(object sender, RoutedEventArgs e)
     {
         Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
@@ -117,6 +146,9 @@ public partial class MainModelView : Window
     }
     
 
+    /// <summary>
+    /// Обработчик кнопки удаления элемента
+    /// </summary>
     private void DeleteBtn_OnClick(object sender, RoutedEventArgs e)
     {
         // Получаем выделенный элемент
@@ -129,12 +161,18 @@ public partial class MainModelView : Window
         }
     }
 
+    /// <summary>
+    /// Обработчик кнопки добавления элемента
+    /// </summary>
     private void AddBtn_OnClick(object sender, RoutedEventArgs e)
     {
         AddModelView addModelView = new AddModelView(_dataManager);
         addModelView.Show();
     }
 
+    /// <summary>
+    /// Обработчик кнопки обновления элемента
+    /// </summary>
     private void UpdateBtn_OnClick(object sender, RoutedEventArgs e)
     {
         
@@ -146,6 +184,9 @@ public partial class MainModelView : Window
         }
     }
 
+    /// <summary>
+    /// Обработчик кнопки сохранения как
+    /// </summary>
     private void SaveAsBtn_OnClick(object sender, RoutedEventArgs e)
     {
         Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();

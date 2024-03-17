@@ -7,9 +7,13 @@ namespace simple_database.View;
 
 public partial class UpdateModelView : Window
 {
-    private ConditionToStringConverter _converter = new ConditionToStringConverter();
     private DataManager _dataManager;
     private DataModel _data;
+    /// <summary>
+    ///  Иницилизация окна обновления элемента
+    /// </summary>
+    /// <param name="dataManager">Коллекця</param>
+    /// <param name="data">Элемент</param>
     public UpdateModelView(DataManager dataManager, DataModel data) 
     {
         InitializeComponent();
@@ -23,12 +27,18 @@ public partial class UpdateModelView : Window
         DataBox.Text = _data.PurchaseDate.ToString("dd.MM.yy");
     }
 
+    /// <summary>
+    ///  Перестаскивание окна
+    /// </summary>
     private void UpdateView_OnMouseDown(object sender, MouseButtonEventArgs e)
     {
         if(e.LeftButton == MouseButtonState.Pressed)
             DragMove();
     }
-
+    
+    /// <summary>
+    ///  Кнопка добавления
+    /// </summary>
     private void AddBtn_OnClick(object sender, RoutedEventArgs e)
     {
         
@@ -83,6 +93,9 @@ public partial class UpdateModelView : Window
         }
     }
 
+    /// <summary>
+    /// Обработчик кнопки закрытия
+    /// </summary>
     private void CancelBtn_OnClick(object sender, RoutedEventArgs e)
     {
         this.Close();

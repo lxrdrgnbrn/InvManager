@@ -10,16 +10,23 @@ public class DataManager
 {
     private ObservableCollection<DataModel> _data;
 
+    /// <summary>
+    ///  Конструктор DataManager
+    /// </summary>
     public DataManager()
     {
         _data = new ObservableCollection<DataModel>();
     }
 
+    /// <summary>
+    ///  Коллекция данных типа DataModel
+    /// </summary>
     public ObservableCollection<DataModel> Data => _data;
 
     /// <summary>
-    /// Добавляет новый элемент в коллекцию.
+    /// Добавление нового элемента в коллекцию
     /// </summary>
+    /// <param name="item">Элемент коллекции (Data)</param>
     public void Add(DataModel item)
     {
         item.Id = _data.Count;
@@ -27,16 +34,18 @@ public class DataManager
     }
 
     /// <summary>
-    /// Удаляет элемент из коллекции.
+    /// Удаление элемента из коллекции
     /// </summary>
+    /// <param name="item">Элемент коллекции (Data)</param>
     public void Remove(DataModel item)
     {
         _data.Remove(item);
     }
 
     /// <summary>
-    /// Обновляет существующий элемент в коллекции.
+    /// Обновление элемента в коллекции
     /// </summary>
+    /// <param name="item">Элемент коллекции (Data)</param>
     public void Update(DataModel item)
     {
         int index = _data.IndexOf(item);
@@ -45,12 +54,20 @@ public class DataManager
             _data[index] = item;
         }
     }
+    /// <summary>
+    ///  Сохранение данных в файл
+    /// </summary>
+    /// <param name="filePath">Путь файла</param>
     public void SaveData(string filePath)
     { ;
         string json = JsonConvert.SerializeObject(_data);
         File.WriteAllText(filePath, json);
     }
 
+    /// <summary>
+    /// Загрузка данных из файла
+    /// </summary>
+    /// <param name="filePath">Путь файла</param>
     public void LoadData(string filePath)
     {
         if (!File.Exists(filePath))
