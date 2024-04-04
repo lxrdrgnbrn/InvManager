@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\oop-projects\simple-database\InvManager\App.xaml
-4-1685468210
+5-1478769690
 
-10879587949
+11-643393175
 206-1444026220
-View\AddModelView.xaml;View\LoginView.xaml;View\MainModelView.xaml;View\UpdateModelView.xaml;
+View\AboutView.xaml;View\AddModelView.xaml;View\LoginView.xaml;View\MainModelView.xaml;View\UpdateModelView.xaml;
 
-True
+False
 

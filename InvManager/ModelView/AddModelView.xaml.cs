@@ -7,7 +7,6 @@ namespace simple_database.View;
 
 public partial class AddModelView : Window
 {
-    private ConditionToStringConverter _converter = new ConditionToStringConverter();
     private DataManager _dataManager;
     private DataModel _data = new DataModel(); // формат элемента данных
     /// <summary>

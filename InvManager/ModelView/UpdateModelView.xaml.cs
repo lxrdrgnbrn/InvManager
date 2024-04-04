@@ -60,6 +60,9 @@ public partial class UpdateModelView : Window
                             if (ConditionBox.SelectedItem != null)
                             {
                                 _dataManager.Update(_data);
+                                // установка владельца
+                                MainModelView mainModelView = this.Owner as MainModelView;
+                                mainModelView.UpdateTableItemSource();
                                 this.Close();
                             }
                             else

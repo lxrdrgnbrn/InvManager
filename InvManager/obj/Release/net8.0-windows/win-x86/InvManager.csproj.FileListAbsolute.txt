@@ -36,3 +36,6 @@ C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\re
 C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\InvManager.pdb
 C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\InvManager.genruntimeconfig.cache
 C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\ref\InvManager.dll
+C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\View\AboutView.g.cs
+C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\View\AboutView.baml
+C:\oop-projects\simple-database\InvManager\obj\Release\net8.0-windows\win-x86\InvManager.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ade3663e55492e9f4ac5ade426b3f407b8a25af")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

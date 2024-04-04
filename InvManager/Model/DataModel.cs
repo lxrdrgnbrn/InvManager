@@ -17,13 +17,13 @@ public enum EquipmentCondition
 /// </summary>
 public class DataModel
 {
-    private int _id;
-    private string _name;
-    private string _description;
-    private string _category;
-    private DateTime _purchaseDate;
-    private EquipmentCondition _condition;
-    private string _inventoryNumber;
+    private int _id; // Идентификатор оборудования.
+    private string _name; // Название оборудования
+    private string _description; // Описание оборудования
+    private string _category; // Категория оборудования
+    private DateTime _purchaseDate; // Дата покупки оборудования
+    private EquipmentCondition _condition;// Состояние оборудования
+    private string _inventoryNumber;// Инвентарный номер оборудования
 
     /// <summary>
     /// Идентификатор оборудования.

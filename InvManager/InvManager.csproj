@@ -60,6 +60,10 @@
       <Resource Include="Images\InvManager.ico">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <None Remove="Images\search-outlined.png" />
+      <Resource Include="Images\search-outlined.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>
